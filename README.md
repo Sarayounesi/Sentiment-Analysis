@@ -1,6 +1,5 @@
 # Sentiment-Analysis
 
-[![Readme Card](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Sarayounesi&repo=Sentiment-Analysis&theme=dark&title_color=7f9eda&icon_color=7fdac9&text_color=FDFDFD&hide_border=true)](https://github.com/Sarayounesi/Sentiment-Analysis)
 
 This repository contains code and resources for sentiment analysis in Persian. It includes various approaches such as rule-based methods, machine learning algorithms, and hybrid models to detect sentiments in text.
 
@@ -59,7 +58,7 @@ Final tokens:
 
 ['من', 'امروز', 'به', 'مدرسه', 'رفتم', 'و', 'یک', 'کتاب', 'جدید', 'خریدم']
 
-Removing Short Tokens and Numbers
+#Removing Short Tokens and Numbers
 Tokens with length ≤ 1 or containing only digits are removed.
 
 Example
@@ -75,64 +74,64 @@ After removal:
 
 ['من', 'تا', 'برادر', 'تا', 'خواهر', 'دارم', 'اسم', 'برادرهام', 'علی', 'مهدی', 'اسم', 'خواهرهام', 'زهرا', '،', 'فاطمه', 'مریم', 'است']
 
-Lemmatization
+# Lemmatization
 If enabled, tokens are lemmatized using the Lemmatizer class, converting words to their base forms.
 
-Transfer Learning for Sentiment Classification
+# Transfer Learning for Sentiment Classification
 We use transfer learning models for sentiment classification on ArmanEmo, leveraging pre-trained language models like ParsBERT and RoBERTa-XLM.
 
-Model Comparison
+# Model Comparison
 ParsBERT, a monolingual model for Persian, outperforms multilingual BERT in various NLP tasks. We also compare RoBERTa-XLM and EMO-XLM for sentiment detection in Persian.
 
 trophy Selected Model
 The chosen model, large-roberta-xlm, achieved over 70% accuracy, outperforming BERT and ParsBERT.
 
-️ Model Architecture
+️# Model Architecture
 RoBERTa-XLM is a multilingual version of RoBERTa, pre-trained on 2.5TB of filtered CommonCrawl data in 100 languages. It uses a transformer encoder with self-attention mechanisms and feed-forward neural networks.
 
-Improvements Over XLM
+# Improvements Over XLM
 •  Larger pre-training dataset
 
 •  More training steps
 
 •  Removed Next Sentence Prediction (NSP) task
 
-Performance
+# Performance
 RoBERTa-XLM achieves state-of-the-art results in multilingual NLP tasks, leveraging shared information across languages for improved performance.
 
-Article Overview
+# Article Overview
 This article discusses the importance of sentiment analysis, the available Persian datasets, and the concept of mixed sentiments in texts. It explains the use of multi-label classification to identify multiple sentiments in a sentence.
 
-️ Approaches
+️# Approaches
 Different sentiment detection approaches are covered, including:
 •  Rule-based methods: Based on linguistic rules.
 
 •  Machine Learning methods: Use trained labels to classify unlabeled text efficiently. Algorithms like SVM, LSTM, and GRU are highlighted for their advanced results.
 
-Hybrid Approaches
+# Hybrid Approaches
 Combining rule-based and ML approaches to leverage the strengths of both while minimizing their weaknesses. The idea is to implement a set of classifiers and enrich them with linguistic knowledge from dictionaries for more accurate sentiment detection.
 
-Dataset and Preprocessing
+# Dataset and Preprocessing
 Details on the collection, labeling, and preprocessing of Persian datasets are provided. The article reviews the statistics of the datasets and compares various models.
 
-⚙️ Model Training
+# ⚙️ Model Training
 The process of fine-tuning models using transfer learning is described. The article explains the use of dropout layers and the tokenizer for the large-roberta-xlm model. The model is compiled and trained, with results stored for analysis.
 
-Evaluation
+# Evaluation
 The article evaluates the model using precision, F1 score, and recall. It includes a manual analysis of misclassified texts to understand model errors. The performance of two datasets is compared, highlighting the superiority of the training data.
 
-Confusion Matrix
+# Confusion Matrix
 A confusion matrix is used to show the performance of the classification algorithm, indicating the number of correctly and incorrectly predicted samples.
 
-Loss and Accuracy Charts
+# Loss and Accuracy Charts
 Charts showing the loss and accuracy for training and testing data are presented. The model's performance is analyzed over multiple epochs, with suggestions for improving generalization.
 
-Manual Testing
+# Manual Testing
 Functions for manually testing sentences and texts are implemented. The article discusses the challenges of classifying texts with mixed sentiments and the use of multi-label classifiers to address this issue.
 
-Evaluation Metrics Comparison
+# Evaluation Metrics Comparison
 The article compares evaluation metrics with the results from the paper, showing higher average scores for precision, recall, and F1 score.
 
-Confusion Matrix
+# Confusion Matrix
 The confusion matrix from the project is compared with the one from the paper, demonstrating the model's appropriate performance in classifying texts according to their sentiments.
 
