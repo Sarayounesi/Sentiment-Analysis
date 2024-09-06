@@ -40,7 +40,7 @@ Using the Hazm library for normalization and lemmatization, we clean texts by re
 Tokenization and Punctuation Removal
 For each token, a loop removes all punctuation marks from the list puncs (e.g., commas, periods, colons, quotes). This simplifies tokens for further text processing like lemmatization, named entity recognition, and sentiment analysis.
 
-Example
+## Example
 Original text:
 
 »من امروز به مدرسه رفتم و یک کتاب جدید خریدم.«
@@ -97,3 +97,40 @@ Improvements Over XLM
 
 Performance
 RoBERTa-XLM achieves state-of-the-art results in multilingual NLP tasks, leveraging shared information across languages for improved performance.
+
+Article Overview
+This article discusses the importance of sentiment analysis, the available Persian datasets, and the concept of mixed sentiments in texts. It explains the use of multi-label classification to identify multiple sentiments in a sentence.
+
+️ Approaches
+Different sentiment detection approaches are covered, including:
+•  Rule-based methods: Based on linguistic rules.
+
+•  Machine Learning methods: Use trained labels to classify unlabeled text efficiently. Algorithms like SVM, LSTM, and GRU are highlighted for their advanced results.
+
+Hybrid Approaches
+Combining rule-based and ML approaches to leverage the strengths of both while minimizing their weaknesses. The idea is to implement a set of classifiers and enrich them with linguistic knowledge from dictionaries for more accurate sentiment detection.
+
+Dataset and Preprocessing
+Details on the collection, labeling, and preprocessing of Persian datasets are provided. The article reviews the statistics of the datasets and compares various models.
+
+⚙️ Model Training
+The process of fine-tuning models using transfer learning is described. The article explains the use of dropout layers and the tokenizer for the large-roberta-xlm model. The model is compiled and trained, with results stored for analysis.
+
+Evaluation
+The article evaluates the model using precision, F1 score, and recall. It includes a manual analysis of misclassified texts to understand model errors. The performance of two datasets is compared, highlighting the superiority of the training data.
+
+Confusion Matrix
+A confusion matrix is used to show the performance of the classification algorithm, indicating the number of correctly and incorrectly predicted samples.
+
+Loss and Accuracy Charts
+Charts showing the loss and accuracy for training and testing data are presented. The model's performance is analyzed over multiple epochs, with suggestions for improving generalization.
+
+Manual Testing
+Functions for manually testing sentences and texts are implemented. The article discusses the challenges of classifying texts with mixed sentiments and the use of multi-label classifiers to address this issue.
+
+Evaluation Metrics Comparison
+The article compares evaluation metrics with the results from the paper, showing higher average scores for precision, recall, and F1 score.
+
+Confusion Matrix
+The confusion matrix from the project is compared with the one from the paper, demonstrating the model's appropriate performance in classifying texts according to their sentiments.
+
