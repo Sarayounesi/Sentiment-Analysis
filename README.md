@@ -1,7 +1,7 @@
 # Sentiment-Analysis
 
 
-This repository contains code and resources for sentiment analysis in Persian. It includes various approaches such as rule-based methods, machine learning algorithms, and hybrid models to detect sentiments in text.
+Sentiments and opinions in online texts are highly important, and accurately detecting sentiments in the Persian language is a challenging task. In this project, we aim to perform sentiment analysis on Persian texts using pre-trained deep learning models.
 
 
 # Emotion Recognition
