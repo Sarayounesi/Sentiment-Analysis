@@ -1,24 +1,24 @@
 # Sentiment-Analysis
 
 
-This repository contains a project focused on sentiment analysis using various machine learning techniques.
+This repository contains a project focused on sentiment analysis in ArmanEmo Dataset.
 
-Emotion Recognition
+# Emotion Recognition
 Emotion recognition plays a crucial role in social and professional life, closely linked to cognitive abilities and communication skills. Companies strive to align their behavior, services, and products with customer expectations to ensure business growth.
 
-ArmanEmo Dataset
+# ArmanEmo Dataset
 With the rise of open text data on social media platforms, sentiment analysis has gained attention. This study introduces ArmanEmo, a dataset of over 7,000 Persian sentences labeled for seven categories. The data, collected from Twitter, Instagram, and Digikala, is labeled based on Ekman's six basic emotions (anger, fear, joy, hate, sadness, surprise) and an additional category (other).
 
-️ Data Preprocessing
+️# Data Preprocessing
 To improve data quality, emojis, IDs, and links were removed. Heuristic and manual methods were used for classification, resulting in 12,000 sentences. After normalization and annotation, 4,700 sentences were labeled and split into training (3,500+) and test (1,100+) sets. ParsBERT was fine-tuned for this task.
 
-Labeling Process
+# Labeling Process
 7,500 sentences were manually labeled into emotion classes or two other categories ("unknown" and "other"). 38% of these sentences remained unlabeled, highlighting the challenge of emotion classification even for human annotators. 25% of the final labeled sentences were classified as "other," and some were labeled as "unknown" and excluded from the dataset.
 
-Data Cleaning
+# Data Cleaning
 Raw data often contains various inconsistencies that hinder accurate analysis and modeling. Preprocessing aims to address these challenges, ensuring data reliability, accuracy, and completeness, ultimately improving analysis and predictions.
 
-Preprocessing Methods
+# Preprocessing Methods
 •  Noise Reduction: Removing or correcting noisy, erroneous, inconsistent, or incomplete data.
 
 •  Data Transformation: Converting text, audio, or image data into numerical data, normalizing, standardizing, or encoding data for compatibility with deep learning models.
@@ -27,7 +27,7 @@ Preprocessing Methods
 
 •  Data Augmentation: Generating new data to enhance the dataset.
 
-Implementation
+# Implementation
 Using the Hazm library for normalization and lemmatization, we clean texts by removing extra spaces, fixing attachments, replacing Arabic letters with Persian ones, and finding the base form of each word. A function processes the text and returns the cleaned version.
 
 •  Step 1: Replace characters like # and _ with spaces to reduce noise.
