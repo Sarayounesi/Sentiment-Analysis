@@ -1,7 +1,9 @@
 # Sentiment-Analysis
 
+[![Readme Card](https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Sarayounesi&repo=Sentiment-Analysis&theme=dark&title_color=7f9eda&icon_color=7fdac9&text_color=FDFDFD&hide_border=true)](https://github.com/Sarayounesi/Sentiment-Analysis)
 
-This repository contains a project focused on sentiment analysis in ArmanEmo Dataset.
+This repository contains code and resources for sentiment analysis in Persian. It includes various approaches such as rule-based methods, machine learning algorithms, and hybrid models to detect sentiments in text.
+
 
 # Emotion Recognition
 Emotion recognition plays a crucial role in social and professional life, closely linked to cognitive abilities and communication skills. Companies strive to align their behavior, services, and products with customer expectations to ensure business growth.
